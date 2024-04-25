@@ -1,0 +1,77 @@
+.speed-component {
+  display: none;
+}
+
+@media screen and (max-width: 980px) {
+  .speedCalculatorSection {
+    display: block;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    bottom: 10%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-bottom: 100px;
+    background-color: black;
+  }
+  .timer {
+    font-size: 30px;
+    animation: glowing 1.5s infinite alternate;
+  }
+  .speed,
+  .distance,
+  .time {
+    font-size: 20px;
+  }
+  @keyframes glowing {
+    from {
+      text-shadow: 0 0 10px rgba(39, 115, 7, 0.5),
+        0 0 20px rgba(7, 196, 45, 0.5), 0 0 30px rgba(33, 112, 21, 0.5);
+    }
+    to {
+      text-shadow: 0 0 10px rgba(39, 115, 7, 0.5),
+        0 0 20px rgba(7, 196, 45, 0.5), 0 0 30px rgba(33, 112, 21, 0.5);
+    }
+  }
+  #startBtn {
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #015901;
+    color: white;
+    margin-right: 10px;
+  }
+  #endBtn {
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: red;
+    color: white;
+    margin-right: 10p;
+  }
+  #stopBtn {
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: red;
+    color: white;
+    margin-left: 10px;
+  }
+  .Resetbutton {
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: red;
+    color: white;
+    margin-left: 10px;
+    width: 100px;
+  }
+  .distancebutton {
+    padding: 10px;
+    background-color: #015901;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+}

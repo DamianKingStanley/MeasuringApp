@@ -1,0 +1,14 @@
+.NavigationBarSection {
+  display: none;
+}
+
+@media screen and (max-width: 980px) {
+  .NavigationBarSection {
+    display: block;
+    background-color: rgb(1, 89, 1);
+  }
+  #logo {
+    width: 40%;
+    height: 40%;
+  }
+}

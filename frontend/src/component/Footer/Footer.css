@@ -1,0 +1,15 @@
+.Footer {
+  display: none;
+}
+
+@media screen and (max-width: 980px) {
+  .Footer {
+    display: block;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .Footer a {
+    text-decoration: none;
+    color: green;
+  }
+}

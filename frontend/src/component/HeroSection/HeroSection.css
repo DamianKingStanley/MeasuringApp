@@ -1,0 +1,41 @@
+.LaptopMessage {
+  color: red;
+  text-align: center;
+  padding: 10px;
+  background-color: white;
+}
+
+.heroSection {
+  display: none;
+}
+
+@media screen and (max-width: 980px) {
+  .LaptopMessage {
+    display: none;
+  }
+  .heroSection {
+    display: block;
+    background-image: url(../../assest//spherewave.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 50px;
+    color: white;
+  }
+  .heroSection h3 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 70px;
+    animation: glowing 1.5s infinite alternate;
+  }
+  @keyframes glowing {
+    from {
+      text-shadow: 0 0 10px rgba(39, 115, 7, 0.5),
+        0 0 20px rgba(7, 196, 45, 0.5), 0 0 30px rgba(33, 112, 21, 0.5);
+    }
+    to {
+      text-shadow: 0 0 10px rgba(39, 115, 7, 0.5),
+        0 0 20px rgba(7, 196, 45, 0.5), 0 0 30px rgba(33, 112, 21, 0.5);
+    }
+  }
+}
